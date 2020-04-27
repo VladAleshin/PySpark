@@ -1,6 +1,9 @@
 ## Pet project using pyspark module
-<b>PySparkJob.py</b>
-clickstream.parquet - parquet file with following structure:
+<b>PySparkJob.py</b><br>
+
+From clickstream.parquet file we create train/test/validate parquet files for further training
+
+Clickstream.parquet structure:
 <ul>
 <li>date  - day when events take place </li>
 <li>time - exact time of event </li>
