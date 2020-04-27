@@ -4,7 +4,7 @@ clickstream.parquet - parquet file with following structure:
 <ul>
 <li>date  - day when events take place </li>
 <li>time - exact time of event </li>
-<li>event - type of event, can be either a view or a click on an advertisement </li>
+<li>event - type of event, can be either a view or a click</li>
 <li>platform -	platform, where the event occurred </li>
 <li>ad_id -	ad id</li>
 <li>client_union_id  - client id</li>
