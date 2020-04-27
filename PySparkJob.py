@@ -5,8 +5,8 @@ import pyspark.sql.functions as fn
 from pyspark.sql import SparkSession, Window
 
 def readFile(spark, input_file):
-    '''read file and add new features to dataframe'''
-    parquetFile = spark.read.parquet(input_file)
+    '''read file (clickstream.parquet) and add new features to dataframe'''
+    parquetFile = spark.read.parquet(input_file) # clickstream.parquet
     parquetFile = parquetFile.distinct() # drop dublicates
     w = Window.partitionBy('ad_id')
     parquetFile = parquetFile.withColumn('day_count', fn.approx_count_distinct('date').over(w))      
