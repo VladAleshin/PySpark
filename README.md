@@ -1,4 +1,4 @@
-## 1. PySparkJob.py
+## 1. pet project using  pyspark module
 
 date  - день, в который происходят события <br>
 time - точное время события <br>
