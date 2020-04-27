@@ -2,15 +2,15 @@
 <b>PySparkJob.py</b>
 clickstream.parquet - parquet file with following structure:
 <ul>
-  <li>date  - день, в который происходят события </li>
-<li>time - точное время события </li>
-<li>event 	тип события, может быть или пока или клик по рекламе </li>
-<li>platform 	платформа, на которой произошло рекламное событие </li>
-<li>ad_id 	id рекламного объявления </li>
-<li>client_union_id 	id рекламного клиента </li>
-<li>campaign_union_id 	id рекламной кампании </li>
-<li>ad_cost_type 	тип объявления с оплатой за клики (CPC) или за показы (CPM) </li>
-<li>ad_cost 	стоимость объявления в рублях, для CPC объявлений - это цена за клик, для CPM - цена за 1000 показов </li>
-<li>has_video 	есть ли у рекламного объявления видео </li>
-<li>target_audience_count 	размер аудитории, на которую таргетируется объявление</li>
+<li>date  - day when events take place </li>
+<li>time - exact time of event </li>
+<li>event - type of event, can be either a view or a click on an advertisement </li>
+<li>platform -	platform, where the event occurred </li>
+<li>ad_id -	ad id</li>
+<li>client_union_id  - client id</li>
+<li>campaign_union_id - campaign id </li>
+<li>ad_cost_type - CPC or CPM type of ad </li>
+<li>ad_cost - ad cost in rubles, for CPC ads is the cost per click, for CPM is the price per 1000 views </li>
+<li>has_video - does the ad has a video </li>
+<li>target_audience_count - the size of the audience the ad is targeted to</li>
 </ul>
